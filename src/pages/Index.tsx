@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
-import { site, highlights } from "@/data/content";
+import { site, highlights, about } from "@/data/content";
 
 const Index = () => {
   return (
@@ -13,16 +13,34 @@ const Index = () => {
             backgroundImage: `radial-gradient(ellipse at 70% 30%, hsl(var(--primary) / 0.25), transparent 60%)`,
           }}
         />
-        <div className="max-w-6xl mx-auto px-6 pt-20 pb-24 sm:pt-32 sm:pb-32 fade-in">
-          <p className="text-xs tracking-[0.25em] uppercase text-primary/80 mb-6">Portfolio · 2022—present</p>
-          <h1 className="font-serif-display text-5xl sm:text-7xl leading-[1.05] max-w-4xl">
-            {site.name}.
-            <br />
-            <span className="text-foreground/60">{site.tagline}</span>
-          </h1>
-          <p className="mt-8 max-w-xl text-base sm:text-lg text-foreground/70 leading-relaxed">
-            {site.intro}
-          </p>
+        <div className="max-w-6xl mx-auto px-6 pt-16 pb-24 sm:pt-24 sm:pb-32 fade-in">
+          <div className="grid md:grid-cols-[1fr_1.2fr] gap-10 md:gap-14 items-start">
+            {/* Portrait */}
+            <div className="order-2 md:order-1">
+              <div className="aspect-[4/5] max-w-[280px] mx-auto md:mx-0 overflow-hidden rounded-md border border-border/60 bg-muted">
+                <img
+                  src={about.portrait}
+                  alt={`${site.name}`}
+                  loading="lazy"
+                  width={1024}
+                  height={1280}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            {/* Text */}
+            <div className="order-1 md:order-2">
+              <p className="text-xs tracking-[0.25em] uppercase text-primary/80 mb-6">Portfolio · 2022—present</p>
+              <h1 className="font-serif-display text-5xl sm:text-7xl leading-[1.05] max-w-4xl">
+                {site.name}.
+                <br />
+                <span className="text-foreground/60">{site.tagline}</span>
+              </h1>
+              <p className="mt-8 max-w-xl text-base sm:text-lg text-foreground/70 leading-relaxed">
+                {site.intro}
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
