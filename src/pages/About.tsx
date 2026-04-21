@@ -19,7 +19,7 @@ const About = () => {
         </div>
         <div className="order-1 md:order-2">
           <h1 className="font-serif-display text-4xl sm:text-5xl leading-tight mb-8">
-            Hi, I'm {site.name}.
+            Hoi, ik ben Jef.
           </h1>
           {about.bio.map((p, i) => (
             <p key={i} className="text-foreground/80 leading-[1.85] mb-5 text-[1.0625rem]">
@@ -28,7 +28,7 @@ const About = () => {
           ))}
           <div className="mt-10 pt-8 border-t border-border/60">
             <div className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-4">
-              Currently into
+              Momenteel bezig met
             </div>
             <ul className="flex flex-wrap gap-2">
               {about.interests.map((it) => (

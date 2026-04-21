@@ -14,10 +14,10 @@ const Index = () => {
           }}
         />
         <div className="max-w-6xl mx-auto px-6 pt-16 pb-24 sm:pt-24 sm:pb-32 fade-in">
-          <div className="grid md:grid-cols-[1fr_1.2fr] gap-10 md:gap-14 items-start">
+          <div className="grid md:grid-cols-[minmax(260px,320px)_minmax(0,1fr)] gap-10 md:gap-14 items-start md:items-center">
             {/* Portrait */}
-            <div className="order-2 md:order-1">
-              <div className="aspect-[4/5] max-w-[280px] mx-auto md:mx-0 overflow-hidden rounded-md border border-border/60 bg-muted">
+            <div className="order-2 md:order-1 md:justify-self-center w-full">
+              <div className="aspect-[4/5] max-w-[300px] mx-auto overflow-hidden rounded-md border border-border/60 bg-muted">
                 <img
                   src={about.portrait}
                   alt={`${site.name}`}
@@ -29,8 +29,8 @@ const Index = () => {
               </div>
             </div>
             {/* Text */}
-            <div className="order-1 md:order-2">
-              <p className="text-xs tracking-[0.25em] uppercase text-primary/80 mb-6">Portfolio · 2022—present</p>
+            <div className="order-1 md:order-2 md:max-w-3xl">
+              <p className="text-xs tracking-[0.25em] uppercase text-primary/80 mb-6">Portfolio · 2022—2026</p>
               <h1 className="font-serif-display text-5xl sm:text-7xl leading-[1.05] max-w-4xl">
                 {site.name}.
                 <br />
@@ -47,12 +47,12 @@ const Index = () => {
       {/* Highlights */}
       <section className="max-w-6xl mx-auto px-6 pb-20">
         <div className="flex items-baseline justify-between mb-10">
-          <h2 className="font-serif-display text-2xl sm:text-3xl">Three highlights.</h2>
+          <h2 className="font-serif-display text-2xl sm:text-3xl">Drie hoogtepunten.</h2>
           <Link
             to="/activities"
             className="text-xs sm:text-sm text-muted-foreground hover:text-primary transition-colors flex items-center gap-1"
           >
-            See all activities <ArrowRight className="!size-3.5" />
+            Bekijk alle activiteiten <ArrowRight className="!size-3.5" />
           </Link>
         </div>
 

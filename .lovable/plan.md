@@ -45,7 +45,7 @@ A clean, minimal-dark multi-page portfolio documenting your years at college, wi
 - Image uploads: you can drag images into chat and I'll wire them in
 
 ## What I'll need from you after the plan is approved
-1. Your name + one-line tagline
+1. Jef Dello + one-line tagline
 2. The 3 highlight essays (titles + body text)
 3. Any photos for the highlights, About page, and activity list (can come later)
 4. Rough list of other activities for the Activities page (can be sketched and refined)

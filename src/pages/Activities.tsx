@@ -2,14 +2,13 @@ import { useMemo, useState } from "react";
 import { activities, type Activity } from "@/data/content";
 import { cn } from "@/lib/utils";
 
-const TYPES: Array<Activity["type"] | "All"> = [
-  "All",
+const TYPES: Array<Activity["type"] | "Alle"> = [
+  "Alle",
   "Seminar",
   "Hackathon",
+  "Innovatieroute",
   "Workshop",
   "Project",
-  "Volunteer",
-  "Course",
 ];
 
 const fmt = (d: string) => {
@@ -19,10 +18,10 @@ const fmt = (d: string) => {
 };
 
 const Activities = () => {
-  const [filter, setFilter] = useState<(typeof TYPES)[number]>("All");
+  const [filter, setFilter] = useState<(typeof TYPES)[number]>("Alle");
 
   const grouped = useMemo(() => {
-    const filtered = activities.filter((a) => filter === "All" || a.type === filter);
+    const filtered = activities.filter((a) => filter === "Alle" || a.type === filter);
     const sorted = [...filtered].sort((a, b) => b.date.localeCompare(a.date));
     const map = new Map<number, Activity[]>();
     for (const a of sorted) {
@@ -34,10 +33,10 @@ const Activities = () => {
 
   return (
     <section className="max-w-4xl mx-auto px-6 py-20 sm:py-28 fade-in">
-      <p className="text-xs tracking-[0.25em] uppercase text-primary/80 mb-6">Activities</p>
-      <h1 className="font-serif-display text-4xl sm:text-5xl mb-4">Everything, in order.</h1>
+      <p className="text-xs tracking-[0.25em] uppercase text-primary/80 mb-6">Activiteiten</p>
+      <h1 className="font-serif-display text-4xl sm:text-5xl mb-4">Alles, op volgorde.</h1>
       <p className="text-muted-foreground max-w-xl mb-10">
-        A running log of seminars, hackathons, workshops, and side-projects across my time at college.
+        Een doorlopend overzicht van seminars, hackathons, workshops en zijprojecten tijdens mijn tijd op de hogeschool.
       </p>
 
       {/* Filter chips */}
@@ -59,16 +58,16 @@ const Activities = () => {
       </div>
 
       {grouped.length === 0 && (
-        <p className="text-muted-foreground text-sm">Nothing matches that filter yet.</p>
+        <p className="text-muted-foreground text-sm">Nog niets komt overeen met dit filter.</p>
       )}
 
       <div className="space-y-16">
         {grouped.map(([year, items]) => (
           <div key={year}>
             <div className="flex items-center gap-4 mb-6">
-              <h2 className="font-serif-display text-2xl text-primary">Year {year}</h2>
+              <h2 className="font-serif-display text-2xl text-primary">Jaar {year}</h2>
               <div className="flex-1 h-px bg-border" />
-              <div className="text-xs text-muted-foreground">{items.length} entries</div>
+              <div className="text-xs text-muted-foreground">{items.length} items</div>
             </div>
             <ul className="divide-y divide-border/60">
               {items.map((a) => (

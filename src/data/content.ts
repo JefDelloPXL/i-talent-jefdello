@@ -2,28 +2,31 @@
 // just replace the text strings and image imports.
 
 import heroImg from "@/assets/hero-1.jpg";
-import hlHackathon from "@/assets/hl-hackathon.jpg";
-import hlSeminar from "@/assets/hl-seminar.jpg";
-import hlProject from "@/assets/hl-project.jpg";
+import htfFoto from "@/assets/HTF_foto.jpg";
+import htfLogo from "@/assets/HTF_LOGO.jpg";
+import busitGriet from "@/assets/BUSIT_griet.jpg";
+import busitEat from "@/assets/BUSIT_eat.jpg";
+import dddNotes from "@/assets/DDD_notes.jpg";
+import ddddPhoto from "@/assets/DDDD.jpg";
 import portrait from "@/assets/portrait.jpg";
-import inline1 from "@/assets/inline-1.jpg";
-import inline2 from "@/assets/inline-2.jpg";
 
 export const site = {
-  name: "Your Name",
-  tagline: "CS student documenting the path.",
+  name: "Jef Dello",
+  tagline: "student toegepaste informatica met focus op AI en Data",
   intro:
-    "A quiet record of the seminars, hackathons and side-projects that shaped my time in college — what I tried, what I learned, and what I'd do differently.",
+    "Dit portfolio bundelt mijn I-Talent traject: van seminaries en projectweken tot internationale samenwerking, hackathons en reflecties over mijn groei in communicatie, teamwork en technische vaardigheden.",
   hero: heroImg,
 };
 
 export const about = {
   portrait,
   bio: [
-    "I'm a Computer Science student fascinated by the small moments where ideas turn into working things — a script that finally compiles, a demo that survives the first real user, a teammate who explains an algorithm in a way that finally clicks.",
-    "This site is part assignment, part scrapbook: a place to slow down and look at what the last few years actually added up to.",
+    "Ik ben Jef Dello, student Toegepaste Informatica met een grote interesse in data, technologie en alles wat daarbij komt kijken. Wat mij typeert, is mijn nieuwsgierigheid: ik leer graag nieuwe dingen, denk mee na over oplossingen en haal veel voldoening uit het werken aan projecten die echt iets kunnen betekenen.",
+    "Binnen mijn traject staat voor mij vooral de X-factor centraal: met (em)passie bezig zijn, openstaan voor innovatie, samenwerken met anderen en blijven groeien als professional. Net daarom werk ik graag in teamverband, waar ik energie krijg van ideeën uitwisselen, samen naar een doel toewerken en elkaar sterker maken.",
+    "Data en technologie zijn voor mij meer dan een studiegebied. Ik werk graag met informatie, analyses en systemen, en ik vind het boeiend om te zoeken naar hoe technologie slimmer en beter ingezet kan worden. Tegelijk heb ik doorheen mijn opleiding ook sterk gewerkt aan mijn communicatie en presentatievaardigheden, waardoor ik vandaag met meer vertrouwen mijn ideeën naar voren breng.",
+    "De komende jaren wil ik mij verder ontwikkelen tot een professional die niet alleen technisch sterk is, maar ook initiatief neemt, duidelijk communiceert en samen met anderen impactvolle oplossingen bouwt. Voor mij draait dat uiteindelijk om blijven bijleren, kansen grijpen en met enthousiasme meewerken aan innovatieve projecten.",
   ],
-  interests: ["Systems & low-level code", "Human-centered design", "Open source", "Coffee at 2am"],
+  interests: ["data engineering", "AI-toepassingen", "sport en zwemmen", "gamen", "stage bij datasense"],
 };
 
 export type EssayBlock =
@@ -41,45 +44,57 @@ export type Highlight = {
 
 export const highlights: Highlight[] = [
   {
-    slug: "first-hackathon",
-    title: "My First Hackathon",
-    teaser: "48 hours, three strangers, one stubborn bug.",
-    context: "Year 1 · Spring · 48-hour campus hackathon",
-    hero: hlHackathon,
+    slug: "busit-week-ucll",
+    title: "BusIT Week UCLL",
+    teaser: "Internationale projectweek rond data-gedreven scouting voor OHL.",
+    context: "Jaar 2 · Internationalisering · Maart 2024",
+    hero: busitGriet,
     body: [
-      { type: "p", text: "I almost didn't sign up. The form sat open in a tab for three days before a friend leaned over and submitted it for me. By Friday evening I was standing in a lecture hall full of laptops, trying to remember how to introduce myself." },
-      { type: "p", text: "Our team formed in the awkward ten minutes after the keynote — two strangers and me, united mostly by a shared inability to leave. We picked an idea that sounded clever at midnight and looked impossible by 3am." },
-      { type: "img", src: inline1, alt: "Glowing circuit traces", caption: "Somewhere around hour 14, the wiring started to make sense.", width: "wide" },
-      { type: "p", text: "What I actually learned that weekend had nothing to do with the framework we used. It was about how to disagree quickly, how to throw away code without flinching, and how to ask for help from someone who looked just as lost as I did." },
-      { type: "p", text: "We didn't win. We placed somewhere quietly mid-table. But I left with a working demo, two new friends, and the first real proof that I could build something under pressure." },
+      { type: "p", text: "Tijdens de BusIT-week werkte ik in een internationaal team van acht studenten aan een echte business case van voetbalclub OHL. Het doel was een proof-of-concept bouwen waarmee scouts spelers met gelijkaardige profielen konden vinden op basis van data." },
+      { type: "p", text: "We begonnen met het analyseren van de dataset en breidden de clustering uit om betekenisvolle spelersgroepen te vormen. Daarna bouwden we een eenvoudig platform waarop je een speler kon opzoeken en vergelijkbare spelers kon laten voorstellen door het model." },
+      { type: "p", text: "Onze samenwerking was vanaf dag een heel internationaal: studenten uit Vlaanderen, Wallonie en Roemenie werkten samen in een strak schema. Dat maakte de afstemming soms uitdagend, maar net daardoor leerden we snel en concreet communiceren over prioriteiten en taken." },
+      { type: "img", src: busitEat, alt: "Teamwerk tijdens BusIT Week", caption: "gratis eten is ook altijd welkom", width: "inline" },
+      { type: "p", text: "De grootste uitdagingen waren tijdsdruk, communicatie in een internationaal team en het finetunen van het model om consistente resultaten te krijgen. Met iteratief testen en duidelijke taakverdeling kregen we alles toch werkend." },
+      { type: "p", text: "Op het einde van de week pitchten we ons project voor een grote zaal. Ons team werd uiteindelijk als winnaar gekozen. Deze ervaring versterkte mijn vertrouwen in teamwork, presenteren en pragmatisch werken onder druk." },
+      { type: "p", text: "Voor mij persoonlijk was dit een kantelpunt in hoe ik naar projectwerk kijk: niet alleen de technische oplossing telt, maar ook hoe goed je als team beslissingen neemt onder druk. Die combinatie van analyse, samenwerking en presentatie neem ik sindsdien mee in andere projecten." },
+      { type: "p", text: "Wat me het meest is bijgebleven, is hoe belangrijk het was om technisch correcte keuzes ook begrijpelijk te maken voor een niet-technisch publiek. Tijdens de pitch moesten we niet alleen tonen dat het werkte, maar ook waarom het nuttig was voor scouts in de praktijk." },
+      { type: "p", text: "Die vertaalslag van data naar bruikbare inzichten maakte dit project voor mij extra relevant. Het gaf me het gevoel dat ik niet enkel code schrijf, maar echt kan bijdragen aan beslissingen in een concrete context." },
     ],
   },
   {
-    slug: "research-seminar",
-    title: "The Research Seminar That Changed My Major",
-    teaser: "I walked in for the free pizza and walked out with a thesis idea.",
-    context: "Year 2 · Autumn · Department research series",
-    hero: hlSeminar,
+    slug: "hackathon-aquatopia",
+    title: "Hackathon Aquatopia",
+    teaser: "Een eendaagse challenge om walvisvaarderslogboeken met AI te verwerken.",
+    context: "Jaar 3 · Hackathon · November 2025",
+    hero: htfFoto,
     body: [
-      { type: "p", text: "The talk was on something I won't pretend I fully understood — distributed consensus, formal proofs, a whiteboard that filled up faster than I could photograph it. I sat in the back, half-expecting to leave at the break." },
-      { type: "p", text: "I didn't leave. The speaker had a way of treating the audience like collaborators rather than students, and for the first time the field stopped feeling like a syllabus and started feeling like a conversation I was allowed to join." },
-      { type: "img", src: inline2, alt: "Hands on a keyboard at night", caption: "I went home and started reading.", width: "inline" },
-      { type: "p", text: "I emailed the professor that night. The reply came two days later: a reading list, an open invitation to the lab meeting, and a single sentence that I still think about — \"the best questions are the ones you can't quite phrase yet.\"" },
-      { type: "p", text: "I changed my elective track the following semester. The seminar didn't teach me an algorithm; it taught me that curiosity is a skill you practice in public." },
+      { type: "p", text: "Bij de Cronos Aquatopia Hackathon werkte ik met een PXL-team aan de challenge Leviathan's Ledger. De opdracht: historische logboeken van walvisvaarders uit de 19e eeuw verwerken en visualiseren op een interactieve kaart." },
+      { type: "p", text: "We gebruikten een OpenAI API voor extractie, FastAPI voor de backend en Vue voor de frontend. Mijn focus lag op data-extractie en het betrouwbaarder maken van de output, zodat we hallucinaties zoveel mogelijk konden vermijden." },
+      { type: "p", text: "De opdracht vroeg niet alleen technische uitvoering, maar ook keuzes maken in kwaliteit tegenover snelheid. Omdat we maar een dag hadden, moesten we heel bewust bepalen welke onderdelen absoluut betrouwbaar moesten zijn en welke delen eerder proof-of-concept mochten blijven." },
+      { type: "img", src: htfLogo, alt: "HTF logo tijdens hackathon", caption: "Van walvisvaartlogboek naar dashboard: de kapitein zou trots zijn.", width: "inline" },
+      { type: "p", text: "De grootste uitdaging was de ongestructureerde brondata: elk logboek had een andere structuur en formaat. Met meerdere iteraties en validatie bouwden we een pipeline die de gegevens in een uniformer formaat kon omzetten." },
+      { type: "p", text: "Hoewel we niet wonnen, was het resultaat technisch sterk en leerde ik veel over AI-beperkingen, prioriteiten stellen en samenwerken onder strakke deadlines." },
+      { type: "p", text: "Achteraf bekeken was dit een zeer waardevolle reality check over AI in de praktijk: modellen kunnen veel versnellen, maar zonder controle op consistentie en outputkwaliteit krijg je snel misleidende resultaten. Die les gebruik ik nu bewust in elk project met generatieve AI." },
+      { type: "p", text: "Daarnaast merkte ik hoe belangrijk communicatie in kleine teams is wanneer iedereen parallel aan verschillende onderdelen werkt. Door snel resultaten met elkaar te delen konden we problemen vroeger opsporen en keuzes beter onderbouwen." },
+      { type: "p", text: "De hackathon bevestigde voor mij dat ik graag werk op het kruispunt van data, AI en productdenken. Zelfs binnen een korte tijdspanne haal ik veel motivatie uit het bouwen van iets tastbaars dat meteen getest en getoond kan worden." },
     ],
   },
   {
-    slug: "capstone-project",
-    title: "Building the Capstone",
-    teaser: "Six months, one team, and the slow art of finishing.",
-    context: "Year 3 · Year-long capstone project",
-    hero: hlProject,
+    slug: "innovatieroute-ddd",
+    title: "Innovatieroute Domain Driven Design",
+    teaser: "Van event storming en bounded contexts naar .NET-implementatie.",
+    context: "Jaar 3 · Innovatie · 2025",
+    hero: dddNotes,
     body: [
-      { type: "p", text: "The capstone was supposed to be the hard part. In the end the hard part wasn't the code — it was deciding, every week, what not to build." },
-      { type: "p", text: "We started with a feature list long enough to embarrass us. By month two we had cut it in half. By month four we were defending the cuts to a panel of advisors who, gently and correctly, asked us to cut more." },
-      { type: "img", src: inline1, alt: "Detail shot of the project", caption: "The architecture diagram went through nine versions.", width: "wide" },
-      { type: "p", text: "I learned to write specs I actually re-read. I learned that a fifteen-minute standup is worth more than a two-hour Slack thread. I learned that the person who keeps the project's emotional temperature steady is doing real engineering work, even if it never shows up in the commit log." },
-      { type: "p", text: "We shipped. It wasn't perfect — it was finished, which turned out to be a different and harder thing." },
+      { type: "p", text: "In deze innovatieroute maakte ik kennis met Domain Driven Design (DDD): een manier van softwareontwikkeling waarin je eerst het domein en de processen goed begrijpt voor je gaat implementeren." },
+      { type: "p", text: "Tijdens de theoretische sessies werkten we met concepten zoals event storming, bounded contexts en domeinmodellering. Daarna vertaalden we die inzichten naar een praktische .NET-implementatie." },
+      { type: "p", text: "De grootste meerwaarde voor mij was dat DDD me dwong om trager en gerichter na te denken over het probleem zelf, in plaats van meteen code te schrijven. Door eerst het domein te modelleren werd duidelijker welke verantwoordelijkheden waar thuishoren." },
+      { type: "img", src: ddddPhoto, alt: "DDD workshop en modellering", caption: "sticky notes zijn nog altijd nuttig", width: "inline" },
+      { type: "p", text: "Wat ik hier vooral uit meenam, is dat goede softwarearchitectuur niet alleen technisch is, maar ook sterk draait om communicatie, gedeelde taal en iteratief verfijnen van je model in team." },
+      { type: "p", text: "Deze activiteit gaf me extra inzicht in hoe grotere projecten in de praktijk gestructureerd worden en waarom DDD relevant is in professionele omgevingen." },
+      { type: "p", text: "Daarnaast heeft deze workshop mijn blik op teamwerk verbreed: sterke architectuur ontstaat niet door een individueel idee, maar door voortdurend afstemmen met domeinkennis, feedback en iteratie. Dat maakt DDD voor mij niet alleen een techniek, maar ook een manier van samenwerken." },
+      { type: "p", text: "Een belangrijke les voor mij was dat goede voorbereiding veel implementatietijd kan besparen. Door meer aandacht te geven aan contexten en terminologie in het begin, werden latere ontwerpkeuzes logischer en minder foutgevoelig." },
+      { type: "p", text: "Ik neem uit deze innovatieroute vooral mee dat softwarekwaliteit vaak begint voor de eerste regel code. Het denkwerk rond domein, afbakening en verantwoordelijkheden bepaalt uiteindelijk hoe schaalbaar en onderhoudbaar een oplossing wordt." },
     ],
   },
 ];
@@ -88,23 +103,25 @@ export type Activity = {
   date: string; // YYYY-MM
   year: number; // college year (1, 2, 3, ...)
   title: string;
-  type: "Seminar" | "Hackathon" | "Workshop" | "Project" | "Volunteer" | "Course";
+  type: "Seminar" | "Hackathon" | "Workshop" | "Project" | "Innovatieroute";
   description: string;
 };
 
 export const activities: Activity[] = [
-  { date: "2022-10", year: 1, title: "Intro to CS Welcome Talk", type: "Seminar", description: "Department orientation and faculty research overview." },
-  { date: "2022-11", year: 1, title: "Git & GitHub Workshop", type: "Workshop", description: "Hands-on intro to version control and collaborative workflows." },
-  { date: "2023-03", year: 1, title: "Campus Hackathon", type: "Hackathon", description: "First hackathon — placed mid-table with a 48-hour group project." },
-  { date: "2023-05", year: 1, title: "Open Source Contribution Day", type: "Volunteer", description: "Submitted my first accepted PR to a small documentation library." },
-
-  { date: "2023-10", year: 2, title: "Distributed Systems Research Seminar", type: "Seminar", description: "The talk that nudged me into systems work." },
-  { date: "2023-11", year: 2, title: "Algorithms II", type: "Course", description: "Highlight elective: graph algorithms and amortized analysis." },
-  { date: "2024-02", year: 2, title: "Regional Hackathon", type: "Hackathon", description: "Built a real-time collab tool with a four-person team." },
-  { date: "2024-04", year: 2, title: "UX for Engineers Workshop", type: "Workshop", description: "Two-day workshop on user research and prototyping." },
-
-  { date: "2024-09", year: 3, title: "Capstone Kickoff", type: "Project", description: "Started the year-long capstone with a team of four." },
-  { date: "2024-11", year: 3, title: "AI Ethics Seminar", type: "Seminar", description: "Guest lecture series on responsibility in ML systems." },
-  { date: "2025-02", year: 3, title: "Internal Demo Day", type: "Project", description: "Mid-capstone demo to faculty review panel." },
-  { date: "2025-04", year: 3, title: "Mentoring First-Years", type: "Volunteer", description: "Weekly office hours for incoming CS students." },
+  { date: "2026-02", year: 3, title: "Smart ICT PXL: maak een filter en/of hulptool", type: "Hackathon", description: "Tweedelige hackathon rond een filter/hulptool om irrelevante of zwakke websiteberichten te beperken." },
+  { date: "2025-11", year: 3, title: "Hack The Future Aquatopia", type: "Hackathon", description: "Eendaagse hackathon rond Leviathan's Ledger met focus op AI-gedreven extractie en visualisatie van historische walvislogboeken." },
+  { date: "2025-10", year: 3, title: "Innovatieroute: Domain Driven Design", type: "Innovatieroute", description: "Korte innovatieroute waarin we DDD-concepten zoals event storming en bounded contexts toepasten in .NET." },
+  { date: "2025-12", year: 3, title: "Open Source", type: "Seminar", description: "Talk over open source tools en praktijken aangeboden door Cegeka." },
+  { date: "2025-12", year: 3, title: "De wereld van UX", type: "Seminar", description: "Interactieve sessie over het belang van UX voor gebruiksvriendelijke digitale producten." },
+  { date: "2025-11", year: 3, title: "Postman AI", type: "Seminar", description: "Interactieve sessie over de nieuwe AI-mogelijkheden binnen Postman." },
+  { date: "2025-11", year: 3, title: "Quantum Machine Learning, from Zero to Hero", type: "Seminar", description: "Uitleg over de huidige en toekomstige rol van quantum machine learning bij IBM." },
+  { date: "2025-10", year: 3, title: "Boekvoorstelling van Jackie Janssen", type: "Seminar", description: "Extra seminarie over AI en de bijdrage van AI aan de samenleving." },
+  { date: "2025-10", year: 3, title: "POP-sessie 3TIN: My Team and I", type: "Workshop", description: "Sessie rond optimaal samenwerken en de kernvoorwaarden voor sterke teams." },
+  { date: "2024-05", year: 2, title: "Gebruik van AI in softwareontwikkeling", type: "Seminar", description: "Talk over AI in softwareontwikkeling, best practices en prompt engineering." },
+  { date: "2024-04", year: 2, title: "AI Wizards", type: "Seminar", description: "Sessie over het toekomstige interactieve gebruik van AI-agents in softwareprojecten." },
+  { date: "2024-03", year: 2, title: "Code Katas", type: "Seminar", description: "Talk en interactieve sessie over test driven design in softwareontwikkeling." },
+  { date: "2024-03", year: 2, title: "GenAI en Stable Diffusion", type: "Seminar", description: "Seminarie over het gebruik van generatieve AI en Stable Diffusion voor beeldcreatie." },
+  { date: "2024-02", year: 2, title: "POP-sessie 2TIN: Brein aan het werk! Niet storen!", type: "Workshop", description: "Sessie over focus, aandacht en werken in een intens online omgeving." },
+  { date: "2024-02", year: 2, title: "POP-sessie 2TIN: POPping", type: "Workshop", description: "Groepssessie rond zelfkennis, vaardigheden en feedback binnen het team." },
+  { date: "2024-02", year: 2, title: "Projectweek 2TIN", type: "Project", description: "Projectweek rond persoonlijke ontwikkeling, teamwerking en opstart van het research project." },
 ];

@@ -74,7 +74,7 @@ const HighlightPage = () => {
           className="group text-left"
         >
           <div className="text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5 mb-2">
-            <ArrowLeft className="!size-3.5" /> Previous
+            <ArrowLeft className="!size-3.5" /> Vorige
           </div>
           <div className="font-serif-display text-lg group-hover:text-primary transition-colors">
             {prev.title}
@@ -85,7 +85,7 @@ const HighlightPage = () => {
           className="group text-right"
         >
           <div className="text-xs uppercase tracking-wider text-muted-foreground flex items-center gap-1.5 mb-2 justify-end">
-            Next <ArrowRight className="!size-3.5" />
+            Volgende <ArrowRight className="!size-3.5" />
           </div>
           <div className="font-serif-display text-lg group-hover:text-primary transition-colors">
             {next.title}

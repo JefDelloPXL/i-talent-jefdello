@@ -71,7 +71,7 @@ export const Nav = () => {
             to="/activities"
             className={({ isActive }) => cn(linkBase, underline, isActive && linkActive)}
           >
-            Activities
+            Activiteiten
           </NavLink>
         </nav>
 
@@ -90,7 +90,7 @@ export const Nav = () => {
           <div className="px-6 py-4 flex flex-col gap-3">
             <NavLink to="/" end onClick={close} className="py-2 text-sm">Home</NavLink>
             <NavLink to="/about" onClick={close} className="py-2 text-sm">About</NavLink>
-            <div className="text-xs uppercase tracking-wider text-muted-foreground pt-2">Highlights</div>
+            <div className="text-xs uppercase tracking-wider text-muted-foreground pt-2">Hoogtepunten</div>
             {highlights.map((h) => (
               <Link
                 key={h.slug}
@@ -101,7 +101,7 @@ export const Nav = () => {
                 {h.title}
               </Link>
             ))}
-            <NavLink to="/activities" onClick={close} className="py-2 text-sm pt-2">Activities</NavLink>
+            <NavLink to="/activities" onClick={close} className="py-2 text-sm pt-2">Activiteiten</NavLink>
           </div>
         </div>
       )}
