@@ -3,7 +3,7 @@
 
 import heroImg from "@/assets/hero-1.jpg";
 import htfFoto from "@/assets/HTF_foto.jpg";
-import htfLogo from "@/assets/HTF_LOGO.jpg";
+import htfPng from "@/assets/HTF.png";
 import busitGriet from "@/assets/BUSIT_griet.jpg";
 import busitEat from "@/assets/BUSIT_eat.jpg";
 import dddNotes from "@/assets/DDD_notes.jpg";
@@ -71,7 +71,7 @@ export const highlights: Highlight[] = [
       { type: "p", text: "Bij de Cronos Aquatopia Hackathon werkte ik met een PXL-team aan de challenge Leviathan's Ledger. De opdracht: historische logboeken van walvisvaarders uit de 19e eeuw verwerken en visualiseren op een interactieve kaart." },
       { type: "p", text: "We gebruikten een OpenAI API voor extractie, FastAPI voor de backend en Vue voor de frontend. Mijn focus lag op data-extractie en het betrouwbaarder maken van de output, zodat we hallucinaties zoveel mogelijk konden vermijden." },
       { type: "p", text: "De opdracht vroeg niet alleen technische uitvoering, maar ook keuzes maken in kwaliteit tegenover snelheid. Omdat we maar een dag hadden, moesten we heel bewust bepalen welke onderdelen absoluut betrouwbaar moesten zijn en welke delen eerder proof-of-concept mochten blijven." },
-      { type: "img", src: htfLogo, alt: "HTF logo tijdens hackathon", caption: "Van walvisvaartlogboek naar dashboard: de kapitein zou trots zijn.", width: "inline" },
+      { type: "img", src: htfPng, alt: "HTF afbeelding tijdens hackathon", caption: "de interactieve map van onze data", width: "inline" },
       { type: "p", text: "De grootste uitdaging was de ongestructureerde brondata: elk logboek had een andere structuur en formaat. Met meerdere iteraties en validatie bouwden we een pipeline die de gegevens in een uniformer formaat kon omzetten." },
       { type: "p", text: "Hoewel we niet wonnen, was het resultaat technisch sterk en leerde ik veel over AI-beperkingen, prioriteiten stellen en samenwerken onder strakke deadlines." },
       { type: "p", text: "Achteraf bekeken was dit een zeer waardevolle reality check over AI in de praktijk: modellen kunnen veel versnellen, maar zonder controle op consistentie en outputkwaliteit krijg je snel misleidende resultaten. Die les gebruik ik nu bewust in elk project met generatieve AI." },
