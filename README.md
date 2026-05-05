@@ -2,6 +2,10 @@
 
 A portfolio website documenting my journey through Computer Science studies at PXL University College. This project showcases a collection of seminars, hackathons, and personal projects that highlight my growth and experiences in the field.
 
+## Live link
+
+An azure hosted version of the webpage is available at https://i-talent-jef-dello-hkczakezfme6cgfj.westeurope-01.azurewebsites.net/
+
 ## Tech Stack
 
 - **Frontend**: React 18 with TypeScript
