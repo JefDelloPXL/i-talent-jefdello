@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: read
+  packages: write        # this is the key line
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -15,10 +19,10 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}  # built-in, no setup needed
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and Push
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: ghcr.io/jefdellopxl/i-talent-jefdello:latest
+          tags: ghcr.io/jefdello/i-talent-jefdello:latest
