@@ -25,4 +25,4 @@ jobs:
         uses: docker/build-push-action@v4
         with:
           push: true
-          tags: ghcr.io/jefdello/i-talent-jefdello:latest
+          tags: ghcr.io/jefdellopxl/i-talent-jefdello:latest
